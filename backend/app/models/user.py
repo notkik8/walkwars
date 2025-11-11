@@ -9,7 +9,7 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String, nullable=False, index=True)
     email = Column(String, nullable=False, index=True)
-    password = Column(String, nullable=False, index=True)
+    password = Column(String, nullable=False)
     date_joined = Column(DateTime, nullable=False, index=True)
 
     group = relationship("Group", secondary="user_groups", back_populates="members")
