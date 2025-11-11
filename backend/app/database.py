@@ -21,7 +21,6 @@ def get_db():
         yield db
     finally:
         db.close()
-        db.dispose()
 
 
 def init_db():
