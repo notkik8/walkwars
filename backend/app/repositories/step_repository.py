@@ -5,7 +5,7 @@ from ..schemas.step import StepCreate
 from datetime import datetime, date
 
 
-class UserRepository:
+class StepRepository:
     def __init__(self, db: Session):
         self.db = db
 
