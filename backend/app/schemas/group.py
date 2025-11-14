@@ -4,7 +4,7 @@ from datetime import datetime
 from sqlalchemy import Column, DateTime
 from typing import List
 
-from backend.app.schemas.user import UserCreate
+from ..schemas.user import UserCreate
 
 
 class GroupBase(BaseModel):
@@ -18,7 +18,7 @@ class GroupCreate(GroupBase):
 
 class GroupResponse(GroupBase):
     id: int = Field(..., title="Group ID", description="Group ID")
-    created_at = datetime
+    created_at: datetime
     members: List[dict] = []
 
     class Config:
