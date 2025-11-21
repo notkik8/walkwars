@@ -16,7 +16,6 @@ class Group(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
     group_type = Column(String, index=True)
-    created_by = Column(Integer, ForeignKey("users.id"))
     created_at = Column(DateTime, default=datetime.utcnow)
 
     members = relationship("User", secondary=user_groups, back_populates="groups")

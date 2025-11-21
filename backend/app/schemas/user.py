@@ -11,16 +11,15 @@ class UserBase(BaseModel):
         description="User's username",
     )
     email: EmailStr = Field(..., title="User's email", description="User's email")
-    password: str
 
 
 class UserCreate(UserBase):
-    pass
+    password: str
 
 
 class UserResponse(UserBase):
     id: int = Field(..., title="User ID", description="User ID")
-    date_created: datetime
+    date_created: datetime | None = None
 
     class Config:
         from_attributes = True

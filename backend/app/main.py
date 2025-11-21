@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from .database import Base, engine
 from .routes import auth, groups, steps
 
-# Создаём таблицы
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="WalkWars", version="1.0.0")
