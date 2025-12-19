@@ -1,0 +1,28 @@
+.weather-badge {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--accent-secondary);
+  font-size: 14px;
+  background: var(--bg-tertiary);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+}
+
+.weather-badge:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-hover);
+}
+
+.weather-badge * {
+  color: var(--accent-secondary);
+}
+
+.weather-wind { 
+  opacity: 0.7;
+  color: var(--text-secondary);
+}

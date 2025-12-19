@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Test group 1",
+    "group_type": "duo"
+  },
+  {
+    "name": "Test group 2",
+    "group_type": "squad"
+  }
+]
