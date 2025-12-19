@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 class StepCreate(BaseModel):
-    step_count: int = Field(..., title="Step Count", description="Step Count")
+    step_count: int
 
 
 class StepResponse(BaseModel):

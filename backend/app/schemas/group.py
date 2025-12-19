@@ -20,6 +20,7 @@ class GroupResponse(GroupBase):
     id: int = Field(..., title="Group ID", description="Group ID")
     created_at: datetime
     members: List[UserResponse]
+    is_member: bool = Field(default=False, title="Is Member", description="Whether current user is a member")
 
     class Config:
         from_attributes = True

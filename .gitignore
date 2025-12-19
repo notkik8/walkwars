@@ -21,6 +21,7 @@ Thumbs.db
 
 # Базы данных
 *.sqlite3
+*.db
 
 # Логи
 *.log

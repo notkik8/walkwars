@@ -26,6 +26,7 @@ multidict==6.4.3
 outline-vpn-api==6.3.0
 passlib==1.7.4
 propcache==0.3.1
+pwdlib[argon2]
 psycopg2==2.9.11
 pyasn1==0.6.1
 pydantic==2.12.4
